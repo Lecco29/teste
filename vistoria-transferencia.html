@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vistoria para Transferência - VistoriaVeicular</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .hero-section {
+            background-color: #000000;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at center, rgba(255, 106, 0, 0.1) 0%, rgba(0, 0, 0, 0) 70%);
+            z-index: 0;
+        }
+        .hero-section h1, .hero-section p {
+            color: #ffffff;
+        }
+        .price-tag {
+            background-color: #111111;
+            padding: 15px 25px;
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+        .price-tag .h2 {
+            color: #ff6a00;
+        }
+        .service-badge {
+            display: inline-block;
+            background-color: #ff6a00;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+        .btn-whatsapp {
+            background-color: #ff6a00;
+            border-color: #ff6a00;
+            color: white;
+        }
+        .btn-whatsapp:hover {
+            background-color: #ff8533;
+            border-color: #ff8533;
+            color: white;
+        }
+        .btn-outline-dark {
+            border-color: #ff6a00;
+            color: #ff6a00;
+        }
+        .btn-outline-dark:hover {
+            background-color: #ff6a00;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="imagens/logo.jpeg" alt="Qualitec Vistorias Logo" height="40">
+                <span class="brand-text">Qualitec Vistorias Herculândia-sp</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#inicio">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8 mx-auto text-center" data-aos="fade-up">
+                    <div class="service-badge">Serviço Profissional</div>
+                    <h1 class="display-4 fw-bold mb-4">Vistoria para Transferência</h1>
+                    <p class="lead mb-4">Análise completa para garantir uma transferência segura e regular</p>
+                    <div class="price-tag mb-4">
+                        <span class="h2">A partir de R$ 60,00</span>
+                    </div>
+                    <div class="d-grid gap-2 d-md-flex justify-content-center">
+                        <a href="index.html#servicos" class="btn btn-primary btn-lg me-3">Nossos Serviços</a>
+                        <a href="https://wa.me/5514996372996?text=Olá! Vi seu site e gostaria de agendar uma Vistoria para Transferência" class="btn btn-whatsapp btn-lg">
+                            <i class="fab fa-whatsapp me-2"></i>Agendar Vistoria
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detalhes do Serviço -->
+    <section id="detalhes" class="py-5 bg-light">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2 class="text-center mb-5" data-aos="fade-up">O que inclui nossa Vistoria para Transferência?</h2>
+                    
+                    <div class="card mb-4" data-aos="fade-up">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-check-circle text-primary me-2"></i>Verificação de Documentação</h3>
+                            <p class="card-text">Análise completa de todos os documentos do veículo, incluindo CRV e CRLV.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-check-circle text-primary me-2"></i>Inspeção Visual</h3>
+                            <p class="card-text">Exame detalhado da carroceria, pintura, vidros, rodas e todos os componentes externos do veículo.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-check-circle text-primary me-2"></i>Análise de Sinistro</h3>
+                            <p class="card-text">Identificação de possíveis danos decorrentes de acidentes, enchentes ou outros sinistros.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-body">
+                            <h3 class="card-title"><i class="fas fa-check-circle text-primary me-2"></i>Laudo Técnico Completo</h3>
+                            <p class="card-text">Relatório detalhado com fotos e descrição do estado atual do veículo, incluindo recomendações e alertas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Processo -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Como funciona o processo?</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-center">
+                        <div class="when-icon mb-3">
+                            <i class="fas fa-calendar-check fa-3x text-primary"></i>
+                        </div>
+                        <h4>Agendamento</h4>
+                        <p>Entre em contato conosco para agendar a vistoria no local e horário de sua preferência.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center">
+                        <div class="when-icon mb-3">
+                            <i class="fas fa-clipboard-check fa-3x text-primary"></i>
+                        </div>
+                        <h4>Vistoria</h4>
+                        <p>Nossos especialistas realizam a análise completa do veículo, verificando todos os aspectos técnicos e documentais.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center">
+                        <div class="when-icon mb-3">
+                            <i class="fas fa-file-alt fa-3x text-primary"></i>
+                        </div>
+                        <h4>Laudo</h4>
+                        <p>Após a vistoria, você recebe um laudo técnico detalhado com todas as informações e recomendações.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-5 bg-dark text-white">
+        <div class="container text-center">
+            <h2 class="mb-4" data-aos="fade-up">Pronto para realizar sua vistoria?</h2>
+            <p class="lead mb-4" data-aos="fade-up">Entre em contato conosco agora mesmo e agende sua vistoria para transferência.</p>
+            <a href="https://wa.me/5514996372996?text=Olá! Vi seu site e gostaria de agendar uma Vistoria para Transferência" target="_blank" class="btn btn-whatsapp btn-lg" data-aos="fade-up">
+                <i class="fab fa-whatsapp me-2"></i>Agendar Vistoria
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <h5>VistoriaVeicular</h5>
+                    <p class="mb-0">Serviços profissionais de vistoria automotiva.</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Contato</h5>
+                    <p class="mb-1"><i class="fas fa-phone me-2"></i>(14) 99637-2996</p>
+                    <p class="mb-1"><i class="fas fa-envelope me-2"></i>qualitecvistorias@gmail.com</p>
+                    <p class="mb-0"><i class="fas fa-map-marker-alt me-2"></i>Av. São Paulo, 685 - Centro, Herculândia - SP, 17650-000</p>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <h5>Redes Sociais</h5>
+                    <div class="social-links">
+                        <a href="https://wa.me/5514996372996" class="text-white me-3" target="_blank">
+                            <i class="fab fa-whatsapp fa-lg"></i>
+                        </a>
+                        <a href="https://www.instagram.com/qualitecherculandia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-white me-3" target="_blank">
+                            <i class="fab fa-instagram fa-lg"></i>
+                        </a>
+                        <a href="https://www.facebook.com/qualitecvistorias/?locale=pt_BR" class="text-white" target="_blank">
+                            <i class="fab fa-facebook fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 VistoriaVeicular. Todos os direitos reservados.</p>
+                <p class="mt-2 small text-white">Desenvolvido por <a href="#" class="text-white text-decoration-none">Tucano Tech</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+</html> 
